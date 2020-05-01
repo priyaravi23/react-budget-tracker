@@ -32,14 +32,12 @@ class Add extends Component {
                 <label htmlFor="description" className="desc">Description</label>
                 <div className='field'>
                     <input type='text'
-                           className="form-control"
                            onChange={this.handleDescChange} />
                 </div>
 
                 <label htmlFor="amount" className="amt">Amount</label>
                 <div className='field'>
                     <input type='text'
-                           className="form-control"
                            onChange={this.handleAmtChange} />
                 </div>
 

@@ -5,22 +5,51 @@
 .form-border {
   border-radius: 1.5em;
   border: 3px solid darkblue;
-  background-color: lightgoldenrodyellow;
+  background-color: #fdb813;
+  background-image: linear-gradient(315deg, #fdb813 0%, #788cb6 74%);
+}
+
+.tbl-border {
+  background-color: lightgray;
+}
+
+.desc {
+  color: lightgoldenrodyellow;
+  font-weight: bold;
+}
+
+.amt {
+  color: lightgoldenrodyellow;
+  font-weight: bold;
+}
+
+.balance {
+  font-size: x-large;
+  color: red;
+  font-weight: bold;
 }
 
 .balance-border {
-  border: 1px solid green;
+  padding: 50px;
+  border-radius: 1.5em;
+  background-color: #fdb813;
+  background-image: linear-gradient(315deg, #fdb813 0%, #788cb6 74%);
 }
 
 form {
   padding: 1em;
-  background: #f9f9f9;
   margin-top: 2rem;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding: 1em;
 }
+
+.form-img {
+  background-image: url("./images/finance.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 form input {
   margin-bottom: 1rem;
   background: #fff;
@@ -41,7 +70,7 @@ label {
 }
 
 input {
-  width: 100%;
+  //width: 100%;
   padding: 0.7em;
   margin-bottom: 0.5rem;
 }

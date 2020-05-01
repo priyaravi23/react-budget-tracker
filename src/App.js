@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import TransactionList from "./components/transaction-list";
+import TransactionTable from "./components/transaction-table";
 import Balance from "./components/balance";
 import Add from "./components/add";
 import { v4 as uuidv4 } from 'uuid';
@@ -50,12 +50,12 @@ class App extends Component {
         console.log(this.state.data);
 
         return (
-            <form className="form1">
+            <form className="form-img">
                 <div className='card-body'>
-                    <h3><code>Budget Tracker</code></h3>
+                    <h3><code><b>Budget Tracker</b></code></h3>
                     <Add onAdd={this.add} />
                     <br />
-                    <TransactionList transactions={this.state.data} />
+                    <TransactionTable transactions={this.state.data} />
                     <br />
                     <Balance transactions={this.state.data} />
                 </div>

@@ -5,9 +5,9 @@ const Balance = (props) => {
     const total = transactions.reduce((a, b) => a + b.amount, 0);
 
     return (
-        <div>
-            <h3><code>Balance</code></h3>
-            <p>${total}</p>
+        <div className='balance-border'>
+            <div className='balance'>Balance</div>
+            <p>{`$${total}`}</p>
         </div>
     );
 };
